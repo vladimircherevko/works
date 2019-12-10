@@ -1,0 +1,129 @@
+.select-wrap {
+  position: relative;
+  height: 250px;
+}
+
+/* - label - */
+.select-wrap .select-label {
+  display: block;
+  position: absolute;
+  top: -1.6em;
+  left: 1.4em;
+  color: rgba(144, 117, 99, 0.383);
+  transform-origin: 30% top;
+  transition: .2s;
+}
+
+.select-wrap .select-label.big {
+  transform: scale(1.3, 1.3) translateY(1.2em);
+  color: #000;
+}
+
+/* - select container - */
+.select-wrap .select {
+  position: relative;
+  width: 350px;
+}
+
+/* - title-button - */
+.select-wrap .select .select-title {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  border: 0;
+  border-bottom: 3px solid rgb(103, 103, 110);
+  background: transparent;
+  padding: 5px 10px;
+  cursor: pointer;
+  text-align: left;
+  font-size: 1.1em;
+}
+
+.select-wrap .select .select-title:focus {
+  outline: none;
+}
+
+.select-wrap .select .select-title:hover {
+  border-bottom: 4px solid  rgba(144, 117, 99, 0.397);
+  ;
+  background-color: rgba(218, 218, 224, 0.411);
+}
+
+.select-wrap .select-title.list-mark::after {
+  content: "";
+  position: absolute;
+  width: .3em;
+  height: 1em;
+  right: .5em;
+  top: .5em;
+  background-image: url(/img/arrow.png);
+  background-size: .3em .6em;
+  background-repeat: no-repeat;
+  background-position: right;
+  transform: rotate(.25turn);
+  transition: .3s;
+}
+
+.select-wrap .select-title.list-mark.up::after {
+  transform: rotate(.75turn);
+}
+
+/* - list - */
+.select-wrap .select ul {
+  list-style: none;
+  height: 10.5em;
+  padding: 5px;
+  overflow: auto;
+}
+
+.select-wrap ul::-webkit-scrollbar {
+  width: 10px;
+}
+
+.select-wrap ul::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.3); 
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.select-wrap ul::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background:rgba(144, 117, 99, 0.383); 
+  box-shadow: inset 0 0 6px #b5d864ec; 
+}
+
+.select-wrap .select ul :nth-child(even) {
+  background-color: rgba(217, 255, 0, 0.2);
+}
+
+.select-wrap .select li {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.select-wrap .select li:hover {
+  background-color: #e1eee8;
+}
+
+.select-wrap .actived {
+  color: rgba(144, 117, 99, 0.383);
+  font-weight: 600;
+}
+
+/* - anim block - */
+.select-wrap .select .anim-item {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  background: #fff;
+
+  transform: scale(0, 0);
+  transform-origin: 70% top;
+  transition: all .3s;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.select-wrap .select .anim-item.open {
+  transform: scale(1, 1);
+}

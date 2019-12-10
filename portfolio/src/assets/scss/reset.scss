@@ -1,0 +1,11 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, pre,
+a, big,code,em, img, small, strong,ol, ul, li,
+fieldset, form, label,footer, header,menu, nav,section
+ {
+  margin: 0;
+  padding: 0;
+}
+a{
+  color: inherit;
+  text-decoration: none;
+}

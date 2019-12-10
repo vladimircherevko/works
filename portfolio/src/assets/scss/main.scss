@@ -1,0 +1,127 @@
+@import 'var.scss';
+
+body {
+  font-family: "Yanone Kaffeesatz", Arial, Helvetica, sans-serif;
+}
+
+//  --- header ---
+header {
+  color: $text-color;
+  padding-top: $line;
+
+  .logo {
+    margin-bottom: $line;
+
+    .foto {
+      width: 100px;
+      height: 100px;
+      border: 1px solid $text-color;
+      border-radius: 50%;
+      overflow: hidden;
+      transition: all 0.2s linear;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .inf {
+      text-transform: uppercase;
+      font-weight: 700;
+
+      h3 {
+        margin-bottom: .5em;
+        border-bottom: 1px solid $text-color;
+        color: $header-color;
+      }
+
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    }
+  }
+
+  .appeal {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    margin-bottom: $line;
+    padding: 0;
+  }
+
+}
+
+// --- /header ---
+
+//  --- nav ---
+.filter {
+  h1 {
+    font-weight: 900;
+    width: 200px;
+    color: $text-color;
+    text-transform: uppercase;
+
+    img {
+      height: .9em;
+    }
+  }
+
+  button {
+    height: 30px;
+    background: linear-gradient(to bottom, #969696 0, #666 100%);
+    border: 1px solid #b3b3b3;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+// ---/nav ---
+
+
+// --- works ---
+.works {
+  margin-bottom: 1em;
+  padding-top: $line;
+  padding-bottom: $line;
+  background-color: $works-color;
+}
+
+// --- /works ---
+
+// --- footer ---
+footer {
+  height: 150px;
+  border-top: 1px solid $text-color;
+  color: $text-color;
+  padding-top: 1em;
+
+  h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+    font-weight: normal;
+  }
+
+  &>img {
+    float: left;
+    height: .9em;
+    margin-right: 10px;
+  }
+
+  a {
+    float: right;
+    margin-left: 15px;
+    opacity: .8;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  p {
+    margin-left: 1.5em;
+    margin-top: 100px;
+  }
+}
