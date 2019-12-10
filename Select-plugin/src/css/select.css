@@ -52,20 +52,20 @@
 .select-wrap .select-title.list-mark::after {
   content: "";
   position: absolute;
-  width: .3em;
-  height: 1em;
+  box-sizing: border-box;
+  width: 14px;
+  height: 12px;
   right: .5em;
-  top: .5em;
-  background-image: url(/img/arrow.png);
-  background-size: .3em .6em;
-  background-repeat: no-repeat;
-  background-position: right;
-  transform: rotate(.25turn);
+  top: .7em;
+  border-top: 6px solid #000;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  transform-origin: 50% 25%;
   transition: .3s;
 }
 
 .select-wrap .select-title.list-mark.up::after {
-  transform: rotate(.75turn);
+  transform: rotate(.5turn);
 }
 
 /* - list - */

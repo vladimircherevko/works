@@ -13,8 +13,6 @@ const devWebpackConfig = merge(baseWebpackConfig, {
       ],
       devServer: {
         contentBase: baseWebpackConfig.externals.paths.dist,
-        // historyApiFallback: true,
-        // noInfo: true,
         overlay: {
           warnings: true,
           errors: true
