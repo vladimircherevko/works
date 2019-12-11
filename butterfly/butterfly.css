@@ -1,0 +1,53 @@
+body{
+  background: lightgray;
+  text-align: center;
+  color: palevioletred;
+}
+#container{
+  width: 660px;
+  height: 255px;
+  background: url('img/grass.png') no-repeat;
+  position: relative;
+  margin: auto;
+  perspective: 2000px;
+}
+#butterfly{
+  position: relative;
+  top: 100px;
+  left: -300px;
+  width: 400px;
+  height: 312px;
+  z-index: 20;
+  transform-style: preserve-3d;
+  transform: scale(.5) rotateX(80deg) rotateZ(10deg);
+  transform-origin: 150% 0;
+  animation: butterfly 6s infinite linear;
+}
+#leftwing,#rightwing{
+  background: url('img/butterfly.png');
+  width: 200px;
+  height: 312px;
+  position: absolute;
+  top: 0;
+  transform-origin: 100% 0;
+}
+#leftwing{
+  transform: rotateY(10deg);
+  animation: lwing .2s linear infinite alternate;
+}
+#rightwing{
+  transform: rotateY(-170deg);
+  animation: rwing .2s linear infinite alternate;
+}
+@keyframes butterfly{
+  from{ transform: scale(.5) rotateX(80deg) rotateZ(0deg);}
+  to{ transform: scale(.5) rotateX(80deg) rotateZ(360deg);}
+}
+@keyframes lwing{
+  from{transform: rotateY(10deg);}
+  to{transform: rotateY(80deg)}
+}
+@keyframes rwing{
+  from{transform: rotateY(170deg);}
+  to{transform: rotateY(100deg)}
+}

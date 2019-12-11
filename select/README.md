@@ -4,8 +4,8 @@
 The dynamically created animated drop-down list. 
 It uses Native JavaScript and CSS and can be used
 anywhere in HTML document as a separate element.  
-See folder src/  
-Result in dist/  
+See folder 'src/'  
+Result in 'dist/'  
 
 ## What can
 Load a list of options for a given URL    
