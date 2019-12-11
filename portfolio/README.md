@@ -1,12 +1,14 @@
+# Personal portfolio
+
 ## About this repo
-This project is written using ES6 (see `src/index.js` and imports)  
+This site is written using ES6 (see `src/index.js` and imports)  
 
 ## What is inside
-Just list of works (each of them can be found in `/works`)
+Just list of works (each of them can be found in `https://github.com/vladimircherevko/works/`) and contacts
 
 [Demo on github pages](http://vladimircherevko.github.io/).
 
 ## Additionally used technologies
-Webpack 4 + Bable 7
-Bootstrap 4
-SCSS
+Webpack 4 + Bable 7  
+Bootstrap-grid 4  
+SCSS  
