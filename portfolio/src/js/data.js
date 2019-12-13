@@ -1,5 +1,5 @@
 export let data = {
-  worksList: ['select','index','carton','slider','butterfly'],
+  worksList: ['select','index','slider','butterfly'],
   works: {
     select: {
       img: './assets/img/select.png',
@@ -12,8 +12,8 @@ export let data = {
     index: {
       img: './assets/img/index.png',
       tags: ['JS','Bootstrap','SCSS', 'HTML/CSS'],
-      demo: '#',
-      // demo: 'https://vladimircherevko.github.io/',
+      // demo: '#',
+      demo: 'https://vladimircherevko.github.io/',
       code: 'https://github.com/vladimircherevko/works/tree/master/portfolio/',
       dsc: 'This site were used JavaScript for creation DOM elements and adaptive Bootstrap grid',
       name: 'This site'

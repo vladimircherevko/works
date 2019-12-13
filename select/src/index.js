@@ -8,7 +8,7 @@ import './css/loader.css'
 //start select plugin
 const select = new Select({
   selector: '#select-container',
-  theme: 'Выберите технологию',
+  theme: 'Select Technology',
   url: 'https://vladilen-dev.firebaseio.com/technologies.json',
   onSelect: handler
 });
