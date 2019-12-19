@@ -1,5 +1,5 @@
 export let data = {
-  worksList: ['select','index','slider','butterfly'],
+  worksList: ['select','index','carton','slider','butterfly'],
   works: {
     select: {
       img: './assets/img/select.png',
@@ -12,7 +12,6 @@ export let data = {
     index: {
       img: './assets/img/index.png',
       tags: ['JS','Bootstrap','SCSS', 'HTML/CSS'],
-      // demo: '#',
       demo: 'https://vladimircherevko.github.io/',
       code: 'https://github.com/vladimircherevko/works/tree/master/portfolio/',
       dsc: 'This site were used JavaScript for creation DOM elements and adaptive Bootstrap grid',
@@ -29,11 +28,11 @@ export let data = {
     },
     carton: {
       img: './assets/img/carton.png',
-      tags: ['JS', 'Bootstrap','HTML/CSS'],
+      tags: ['JS', 'Bootstrap','SCSS','HTML/CSS'],
       demo: 'https://vladimircherevko.github.io/works/carton/',
       code: 'https://github.com/vladimircherevko/works/tree/master/carton/',
-      dsc: 'In this training project were used adaptive Bootstrap grid, modal window, form, slider',
-      name: 'Landing page mock-up'
+      dsc: 'In this training, but absolutely working project were used JS, adaptive Bootstrap grid, modal windows, forms with validation, slider, drop-down, site navigation, many pictures and other. Fully valid HTML, good test score GPageSpeed Insights.',
+      name: 'Landing page (mock-up)'
     },
     slider: {
       img: './assets/img/slider.png',
