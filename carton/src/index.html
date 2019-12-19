@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&amp;subset=cyrillic" rel="stylesheet">
+  <style>
+    .title-w::after {
+      content: url("./assets/img/wavy-line..png");
+    }
+  </style>
+
+  <title>Картон</title>
+</head>
+
+<body>
+
+  <!-- modal -->
+  <div class="d-none" id="modal">
+    <div class="container px-0 content">
+      <h3 class="p-3 title"></h3>
+      <button class="d-none d-md-block close-side" data-modal="close">&otimes;</button>
+      <div class="p-3 body" style="background-image: url('./assets/img/bg-modal.png')"></div>
+      <button class="d-md-none btn-o close-center" data-modal="close">Закрыть&nbsp;&nbsp;&nbsp;&timesb;</button>
+    </div>
+  </div><!-- /modal -->
+
+  <!-- header -->
+  <header class="container-fluid">
+    <div class="container">
+      <div class="row mt-3 pb-2">
+
+        <div class="col-2 col-md-3 d-flex">
+          <div class="d-flex align-items-center">
+            <nav>
+              <button onclick="menu.classList.toggle('d-block')">
+                <img class="d-none d-md-block" src="./assets/img/header/logo.png" alt="Logo">
+                <span class="d-md-none">&#9776;</span>
+              </button>
+              <ul class="d-none" id="menu" onclick="this.classList.remove('d-block')">
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#products">Продукция</a></li>
+                <li><a href="#screen2">Предложение</a></li>
+                <li><a href="#manuf">Производство</a></li>
+                <li><a href="#clients">Наши клиенты</a></li>
+                <li><a href="#responses">Отзывы</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+              </ul>
+            </nav>
+            <img class="d-none d-sm-block d-md-none ml-3 logo-mini" src="./assets/img/header/logo-mini.jpg" alt="Logo">
+          </div>
+        </div>
+
+        <div class="col align-self-center">
+          <div class="row justify-content-end align-items-center">
+            <div class="col-auto">7 (000) <b>271-54-28</b></div>
+            <div class="col-auto d-none d-lg-block v-line"></div>
+            <div class="col-auto">7 (000) <b>271-54-29</b></div>
+          </div>
+        </div>
+
+        <div class="col-4 col-sm-3 col-lg-auto align-self-center">
+          <button class="d-flex justify-content-around align-items-center px-3 btn btn-f" data-modal="form"><img
+              src="./assets/img/header/phone.png" alt="&#9990;">
+            <span class="d-none d-md-inline-block ml-2">Заказать
+              звонок</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header><!-- /header -->
+  <div class="container before"></div>
+
+  <!--  screen 1  -->
+  <section class="screen py-5" id="screen1" style="background-image:url('./assets/img/screen1/bg-1.png')">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-lg-5 col-xl-3 d-none d-lg-block">
+          <div class="img-block">
+            <img src="./assets/img/screen1/carton-box.png" alt="Картонные коробки">
+            <img src="./assets/img/screen1/RST.png" alt="RST">
+          </div>
+        </div>
+        <div class="col col-lg-7 col-xl-auto text-block">
+          <h1 class="mb-2">Производство упаковки из гофрокартона</h1>
+          <h2 class="mb-2">с доставкой по всей России</h2>
+          <div class="px-4 py-3 form-container">
+            <p>Получите индивидуальное предложение<br>
+              на производство и поставку гофропродукции
+            </p>
+            <h2 class="mb-2">Образцы упаковки бесплатно!</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /screen 1 -->
+
+  <!-- about -->
+  <section class="py-5" id="about">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-12 col-lg-4">
+          <h2 class="title">5 лет</h2>
+          <p class="mb-2">На рынке изделий из гофрокартона</p>
+        </div>
+        <div class="col-12 col-lg-4">
+          <h2 class="title">до&nbsp;5&nbsp;000&nbsp;000&nbsp;м<sup>2</sup></h2>
+          <p class="mb-2">Ежемесячный объем производства гофрокартона</p>
+        </div>
+        <div class="col-12 col-lg-4">
+          <h2 class="title">4 000 м<sup>2</sup></h2>
+          <p class="mb-2">Площадь склада</p>
+        </div>
+      </div>
+
+      <div class="row mb-4">
+        <div class="col-12 col-md-6 col-xl-4 mb-4">
+          <div class="card">
+            <img src="./assets/img/about/factory.png" alt="&#9745;">
+            <p class="text"><b>Производство</b><br>
+              4 технологические линии спoсобны выполнить любой заказ любой сложности</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-4 mb-4">
+          <div class="card">
+            <img src="./assets/img/about/free.png" alt="&#9745;">
+            <p class="text"><b>Бесплатные образцы</b><br>
+              Бесплатно делаем образцы гофроупаковки - это помогает заранее увидеть упаковку </p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-4 mb-4">
+          <div class="card">
+            <img src="./assets/img/about/stabil.png" alt="&#9745;">
+            <p class="text"><b>Стабильное качество</b><br>
+              Собственная лаборатория контролирует качество на каждом этапе производства </p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-4 mb-4">
+          <div class="card">
+            <img src="./assets/img/about/inshuer.png" alt="&#9745;">
+            <p class="text"><b>Страховой запас</b><br>
+              Можем хранить запас гофропродукции складах и поставлять его партиями</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-4 mb-4">
+          <div class="card">
+            <img src="./assets/img/about/flex.png" alt="&#9745;">
+            <p class="text"><b>Флексопечать</b><br>
+              Возможно нанесение вашего логотипа, текста или манипуляционных знаков</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-4 mb-4">
+          <div class="card">
+            <img src="./assets/img/about/mixing.png" alt="&#9745;">
+            <p class="text"><b>Гидрофобные добавки</b><br>
+              На производстве реализована технология, которая позволяет гофрокартону стать прочнее </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- /about -->
+
+  <!-- products -->
+  <section class="pt-5" id="products">
+    <div class="container">
+      <div class="title-w">наша Продукция</div>
+      <div class="row mb-5">
+
+        <div class="col-12 col-lg-6 mb-5">
+          <div class="img">
+            <img src="./assets/img/products/product-1.png" alt="Продукт"></div>
+          <h3 class="my-3">Гофрокороб 4-х клапанный</h3>
+          <button class="btn btn-o" data-modal="first">Подробнее</button>
+          <button class="btn btn-f" data-modal="form">Получить расчет</button>
+        </div>
+        <div class="col-12 col-lg-6 mb-5">
+          <div class="img">
+            <img src="./assets/img/products/product-2.png" alt="Продукт"></div>
+          <h3 class="my-3">Гофролоток</h3>
+          <button class="btn btn-o" data-modal="second">Подробнее</button>
+          <button class="btn btn-f" data-modal="form">Получить расчет</button>
+        </div>
+        <div class="col-12 col-lg-6 mb-5">
+          <div class="img">
+            <img src="./assets/img/products/product-3.png" alt="Продукт">
+          </div>
+          <h3 class="my-3">Гофрокороб самосборный</h3>
+          <button class="btn btn-o" data-modal="third">Подробнее</button>
+          <button class="btn btn-f" data-modal="form">Получить расчет</button>
+        </div>
+        <div class="col-12 col-lg-6 mb-5">
+          <div class="img">
+            <img src="./assets/img/products/product-4.png" alt="Продукт">
+          </div>
+          <h3 class="my-3">Листовой гофрокартон</h3>
+          <button class="btn btn-o" data-modal="forth">Подробнее</button>
+          <button class="btn btn-f" data-modal="form">Получить расчет</button>
+        </div>
+      </div>
+    </div>
+  </section><!-- /products -->
+
+  <!-- screen 2 -->
+  <section class="screen py-4" id="screen2" style="background-image:url('./assets/img/bg-2.png')">
+    <div class="container">
+      <div class="row">
+        <div class="col form-container">
+          <h1>Получите индивидуальное предложение</h1>
+          <h2 class="mb-4">на производство и поставку изделий</h2>
+        </div>
+      </div>
+    </div>
+  </section><!-- /screen 2 -->
+
+
+  <!-- manuf -->
+  <section class="pt-3" id="manuf">
+    <div class="container py-5">
+      <div class="row">
+        <!-- slider -->
+        <div class="col-12 col-md-10 col-lg-7 offset-md-1 offset-lg-0 order-12 order-lg-1">
+          <div class="slider">
+            <div class="show">
+              <img src="./assets/img/manuf/slide-1.png" alt="foto">
+              <img src="./assets/img/manuf/slide-2.png" alt="foto">
+              <img src="./assets/img/manuf/slide-3.png" alt="foto">
+              <img src="./assets/img/manuf/slide-4.png" alt="foto">
+            </div>
+            <div class="control">
+              <button class="prev">&lsaquo;</button>
+              <div class="item"><img src="./assets/img/manuf/slide-1.png" alt="@"></div>
+              <div class="item"><img src="./assets/img/manuf/slide-2.png" alt="@"></div>
+              <div class="item"><img src="./assets/img/manuf/slide-3.png" alt="@"></div>
+              <div class="item"><img src="./assets/img/manuf/slide-4.png" alt="@"></div>
+              <button class="next">&rsaquo;</button>
+            </div>
+          </div>
+        </div><!-- /slider -->
+
+        <div class="col-12 col-md-10 col-lg-5 offset-md-1 offset-lg-0 order-1 order-lg-12 mb-4">
+          <h1 class="title">Производство</h1>
+          <p>Современное оборудование позволяет производить до 5 миллионов квадратных метров
+            гофрокартона ежемесячно. Гофрокороба и лотки производятся по ГОСТу или чертежам заказчика.</p>
+          <p>Досконально прорабатываем конструкции коро- бов и составы сырья, учитывая условия хранения,
+            транспортировки и производства вашей продукции.</p>
+          <p>Возможно нанесение цветной флексопечати на поверхность коробов.</p>
+        </div>
+      </div>
+    </div>
+  </section><!-- /manuf -->
+
+  <!-- clients -->
+  <section class="container py-3" id="clients">
+    <h1 class="title-w">Наши клиенты</h1>
+    <div class="row">
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="img"><img src="./assets/img/clients/client-1.png" alt=""> </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="img"><img src="./assets/img/clients/client-2.png" alt=""> </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="img"><img src="./assets/img/clients/client-3.png" alt=""> </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="img"><img src="./assets/img/clients/client-4.png" alt=""> </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="img"><img src="./assets/img/clients/client-5.png" alt=""> </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="img"><img src="./assets/img/clients/client-6.png" alt=""> </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="img"><img src="./assets/img/clients/client-7.png" alt=""> </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="img"><img src="./assets/img/clients/client-8.png" alt=""> </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="img"><img src="./assets/img/clients/client-9.png" alt=""> </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="img"><img src="./assets/img/clients/client-10.png" alt=""></div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="img"><img src="./assets/img/clients/client-11.png" alt=""></div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="img"><img src="./assets/img/clients/client-12.png" alt=""></div>
+      </div>
+    </div>
+  </section><!-- /clients -->
+
+  <!-- responses -->
+  <section class="py-5" id="responses">
+    <div class="container">
+      <h1 class="title-w">Отзывы о сотрудничестве</h1>
+      <div class="row">
+        <div class="col mb-2">
+          <img src="./assets/img/responses/sertif-1.png" alt="1">
+        </div>
+        <div class="col mb-2">
+          <img src="./assets/img/responses/sertif-2.png" alt="2">
+        </div>
+        <div class="col mb-2">
+          <img src="./assets/img/responses/sertif-3.png" alt="3">
+        </div>
+      </div>
+    </div>
+  </section><!-- /responses -->
+
+  <!-- contacts -->
+  <section class="container py-4" id="contacts">
+    <h1 class="title-w">Контакты</h1>
+    <div class="row">
+      <div class="col mb-4">
+        <h3 class="mb-2">&#9749;&nbsp;&nbsp;Адрес офиса:</h3>
+        <p>г.&nbsp;Новый,&nbsp;ул.&nbsp;Такаято,&nbsp;17</p>
+      </div>
+      <div class="col mb-4">
+        <h3 class="mb-2">&#9730;&nbsp;&nbsp;Адрес склада:</h3>
+        <p>г.&nbsp;Новый,&nbsp;ул.&nbsp;Такаято,&nbsp;19/3</p>
+      </div>
+      <div class="col mb-4">
+        <h3 class="mb-2">Тел.&nbsp;отдела&nbsp;продаж:</h3>
+        <p>&#9742;&nbsp;&nbsp;7 (000) 271-54-28</p>
+        <p>&#9742;&nbsp;&nbsp;7 (000) 271-54-29</p>
+      </div>
+      <div class="col mb-4">
+        <h3 class="mb-2">&#9993;&nbsp;&nbsp;E-mail:</h3>
+        <p>cartonkaraznaya@gmail.com</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="container-fluid">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-auto">
+          <p>2019 </p>
+        </div>
+        <div class="col">
+          | <small>Учебное задание курса "Веб-разработчик" от Академии верстки</small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- arrow for scroll to header -->
+  <div id="arrow" title="Наверх" hidden>&#8679;</div>
+
+</body>
+
+</html>
