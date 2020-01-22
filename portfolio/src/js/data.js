@@ -1,6 +1,53 @@
 export let data = {
-  worksList: ["notes", "select", "index", "carton", "slider", "butterfly"],
+  worksList: [
+    "search",
+    "gallery",
+    "notes",
+    "select",
+    "index",
+    "canvas",
+    "post",
+    "carton",
+    "slider",
+    "butterfly"
+  ],
   works: {
+    gallery: {
+      img: "./assets/img/gallery.png",
+      tags: ["React", "Native", "JS", "Redux"],
+      demo: "#",
+      code: "https://github.com/vladimircherevko/photogallery",
+      dsc:
+        "A mobile application works with UNSPLASH API. Test task from DEVSTEAM Company. Uses EXPO CLI, Redux. (Only dev version)",
+      name: "Photogallery Mobile"
+    },
+    post: {
+      img: "./assets/img/post.png",
+      tags: ["React", "Native", "JS", "Redux"],
+      demo: "#",
+      code: "https://github.com/vladimircherevko/works/tree/master/post/",
+      dsc:
+        "A mobile application capable of creating photo posts using different react navigators to switch screens. Implements asynchronous font download. Uses EXPO CLI, Redux. As part of the training course 'React Native. Мобильная разработка 2020'. (Only dev version)",
+      name: "Photo Mobile App"
+    },
+    canvas: {
+      img: "./assets/img/canvas.png",
+      tags: ["RxJS", "JS", "Materialize"],
+      demo: "https://vladimircherevko.github.io/works/canvas",
+      code: "https://github.com/vladimircherevko/works/tree/master/canvas/",
+      dsc:
+        "Simple web application uses RxJS library and canvas API. Stylized with Materialize CSS.",
+      name: "Canvas"
+    },
+    search: {
+      img: "./assets/img/search.png",
+      tags: ["RxJS", "JS", "Materialize"],
+      demo: "https://vladimircherevko.github.io/works/search",
+      code: "https://github.com/vladimircherevko/works/tree/master/search/",
+      dsc:
+        "Simple web application uses RxJS library and open GitHub API. Stylized with Materialize CSS.",
+      name: "GitHub search"
+    },
     notes: {
       img: "./assets/img/notes.png",
       tags: ["React", "JS", "Bootstrap"],
@@ -56,13 +103,5 @@ export let data = {
         "Animated slider for 6 images with scroll buttons and clickable indicator. Only HTML/CSS",
       name: "Slider softly animated"
     }
-    // sl: {
-    //   img: './assets/img/map.jpg',
-    //   tags: ['React'],
-    //   demo: '#',
-    //   code: 'https://github.com/vladimircherevko',
-    //   dsc: 'Animated slider for 6 images with scroll buttons and clickable indicator. Only HTML/CSS',
-    //   name: 'So'
-    // },
   }
 };
