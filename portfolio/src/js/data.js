@@ -1,10 +1,12 @@
 export let data = {
   worksList: [
+    "cookbook",
     "search",
     "gallery",
     "notes",
     "select",
     "index",
+    "coctailbar",
     "canvas",
     "post",
     "carton",
@@ -12,6 +14,25 @@ export let data = {
     "butterfly"
   ],
   works: {
+    cookbook: {
+      img: "./assets/img/cookbook.png",
+      tags: ["React", "Express", "JS", "Redux", "MongoDB", "Materialize"],
+      demo: "https://stark-plateau-02074.herokuapp.com/",
+      code: "https://github.com/vladimircherevko/test-binary",
+      dsc:
+        "Web application for writing & keeping recipes. Test task of Binary Studio company.",
+      name: "Cook Book web app"
+    },
+    coctailbar: {
+      img: "./assets/img/coctailbar.png",
+      tags: ["React", "Native", "JS"],
+      code: "https://github.com/vladimircherevko/coctail-bar",
+      demo:
+        "https://github.com/vladimircherevko/coctail-bar/tree/master/coctail-testwork.apk",
+      dsc:
+        "A mobile Android app using coctaildb. Test task of Engeniaring Idia company. Uses EXPO",
+      name: "Coctail Bar mobile app"
+    },
     gallery: {
       img: "./assets/img/gallery.png",
       tags: ["React", "Native", "JS", "Redux"],
